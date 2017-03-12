@@ -52,9 +52,25 @@
 		}
 	}
 	scrollThis(window.location.hash);
-	
+
 	$(".site-wrapper").on("click", 'a.scroll-to', scrollThis);
 	$(".site-wrapper").on("click", 'a.anchor-to', scrollThis);
+
+	// Go to Top
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });	
 
 
 	// Home Featured Content
