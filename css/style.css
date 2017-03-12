@@ -113,7 +113,7 @@ html { color: #222; font-size: 1em; line-height: 1.4; } ::-moz-selection { backg
 * {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
 body { font: 16px/18px 'Sofia Pro Light', 'Oswald Light', 'Oswald', sans-serif; color:#303030;}
 h1, h2, h3, h4, h5, h6 { font-family: 'Sofia Pro Regular', 'Oswald', sans-serif; color:#26a1cb;}
-a:hover { color:#26a1cb;} 
+a:hover { color:#26a1cb; text-decoration: none;} 
 img {width: 100%; height: auto;}
 a:focus {outline:none;}
 a, img { border: none; outline: none; text-decoration: none;}
