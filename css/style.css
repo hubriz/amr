@@ -147,7 +147,7 @@ input:focus,  button:focus { outline:none;}
 .main-section .header-title.inverse h1, .header-title.inverse p { color: white;}
 
 .section-widget { margin-bottom: 20px; }
-.section-widget h3 small {display: block;}
+.section-widget h4 small {display: block; line-height: 2em;}
 .section-widget p { line-height: 24px; }
 
 
