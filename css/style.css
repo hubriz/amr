@@ -51,12 +51,68 @@ html { color: #222; font-size: 1em; line-height: 1.4; } ::-moz-selection { backg
 }
 
 
+@font-face {
+	font-family: 'Sofia Pro Light';
+	src: url('../fonts/SofiaProLight.eot');
+	src: url('../fonts/SofiaProLight.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/SofiaProLight.woff') format('woff'),
+		url('../fonts/SofiaProLight.ttf') format('truetype'),
+		url('../fonts/SofiaProLight.svg#SofiaProLight') format('svg');
+	font-weight: normal
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Sofia Pro Regular';
+	src: url('../fonts/SofiaProRegular.eot');
+	src: url('../fonts/SofiaProRegular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/SofiaProRegular.woff') format('woff'),
+		url('../fonts/SofiaProRegular.ttf') format('truetype'),
+		url('../fonts/SofiaProRegular.svg#SofiaProRegular') format('svg');
+	font-weight: normal
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Sofia Pro Regular Italic';
+	src: url('../fonts/SofiaProRegular-Italic.eot');
+	src: url('../fonts/SofiaProRegular-Italic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/SofiaProRegular-Italic.woff') format('woff'),
+		url('../fonts/SofiaProRegular-Italic.ttf') format('truetype'),
+		url('../fonts/SofiaProRegular-Italic.svg#SofiaProRegular-Italic') format('svg');
+	font-weight: normal
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Sofia Pro Medium';
+	src: url('../fonts/SofiaProMedium.eot');
+	src: url('../fonts/SofiaProMedium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/SofiaProMedium.woff') format('woff'),
+		url('../fonts/SofiaProMedium.ttf') format('truetype'),
+		url('../fonts/SofiaProMedium.svg#SofiaProMedium') format('svg');
+	font-weight: normal
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Sofia Pro Bold';
+	src: url('../fonts/SofiaProBold.eot');
+	src: url('../fonts/SofiaProBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/SofiaProBold.woff') format('woff'),
+		url('../fonts/SofiaProBold.ttf') format('truetype'),
+		url('../fonts/SofiaProBold.svg#SofiaProBold') format('svg');
+	font-weight: normal
+	font-style: normal;
+}
+
+
 /* ======================
 	MAIN STYLE
 ==================  */
 * {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
-body { font: 16px/20px 'Oswald Light', 'Oswald', sans-serif; color:#303030;}
-h1, h2, h3, h4, h5, h6 { font-family: 'Oswald1', sans-serif; color:#26a1cb;}
+body { font: 16px/18px 'Sofia Pro Light', 'Oswald Light', 'Oswald', sans-serif; color:#303030;}
+h1, h2, h3, h4, h5, h6 { font-family: 'Sofia Pro Regular', 'Oswald', sans-serif; color:#26a1cb;}
 a:hover { color:#26a1cb;} 
 img {width: 100%; height: auto;}
 a:focus {outline:none;}
@@ -85,8 +141,8 @@ input:focus,  button:focus { outline:none;}
 .main-section-inner { max-width: 1170px; margin: 0px auto; padding-left: 15px; padding-right: 15px;}
 
 .main-section .header-title { text-align: left; padding-top: 20px;padding-bottom:15px;}
-.main-section .header-title h1 { color:#26a1cb; font:300 1.875em 'Oswald Medium', sans-serif; text-transform:uppercase;m argin:0px 0px 10px;}
-.main-section .header-title p { font: 1em 'Oswald',sans-serif; color:#505050;margin: 0px 0px 10px;}
+.main-section .header-title h1 { color:#26a1cb; font:300 1.875em 'Sofia Pro Medium','Oswald Medium', sans-serif; text-transform:uppercase;margin:0px 0px 10px;}
+.main-section .header-title p { font: 1em 'Sofia Pro Regular','Oswald',sans-serif; color:#505050;margin: 0px 0px 10px;}
 
 .main-section .header-title.inverse h1, .header-title.inverse p { color: white;}
 
@@ -120,7 +176,7 @@ input:focus,  button:focus { outline:none;}
 	.header-bar-inner .right-content {min-width: 540px; padding-left: 20px;}
 	.header-bar-inner .right-content ul { float:right; list-style:none; margin:0; padding:0;}
 	.header-bar-inner .right-content ul li {display:inline;}
-	.header-bar-inner .right-content ul li a { display:inline-block; text-decoration:none; text-transform: uppercase; color: white; font: 1em/200% 'Oswald Light', sans-serif; padding: 0px 20px;}
+	.header-bar-inner .right-content ul li a { display:inline-block; text-decoration:none; text-transform: uppercase; color: white; font: 1em/200% 'Sofia Pro Light','Oswald Light', sans-serif; padding: 0px 20px;}
 	.header-bar-inner .right-content ul li a:hover {color: black; }
 
 	.nav-toggle {position: absolute; right:20px; top:0; color:white; font-size: 2em; display: none;}
@@ -185,8 +241,8 @@ input:focus,  button:focus { outline:none;}
 	#featured-content { clear:both; width: 100%; position:relative; z-index: 1; height: auto; overflow: hidden;}
 	#featured-content .carousel-inner {max-height: 766px;}
 	#featured-content .carousel-caption {top: 24%;z-index: 2;}
-	#featured-content .carousel-caption h1 { font: 3.75em 'Oswald', sans-serif; text-shadow: none; text-transform: capitalize; color: white;}
-	#featured-content .carousel-caption h1 .on-blue-bg { color:#26a1cb;padding: 0px 0.2em; fpmtfont-family: 'Oswald', sans-serif;}
+	#featured-content .carousel-caption h1 { letter-spacing: -2px; font: 3.75em/1.1em 'Sofia Pro Regular','Oswald', sans-serif; text-shadow: none; text-transform: capitalize; color: white;}
+	#featured-content .carousel-caption h1 .on-blue-bg { color:#26a1cb;padding: 0px 0.2em; font-family: 'Sofia Pro Regular', 'Oswald', sans-serif;}
 	#featured-content .carousel-caption h1 strong { font-weight: 500;}
 	.scroll-to { position: absolute; bottom: -26px; left: 49%; z-index: 3;display:block; background: rgba(0,0,0,0.5); border-radius: 50%; color:white; font-size: 24px; font-family: 'Ionicon';width: 50px;  height: 50px; line-height: 50px; text-align: center;}
 	.scroll-to:hover {color:white; text-decoration: none;}
@@ -194,7 +250,7 @@ input:focus,  button:focus { outline:none;}
 
 @media (max-width: 990px) {
 	#featured-content .carousel-caption { top: 10%; }
-	#featured-content .carousel-caption h1 { line-height: 110%; }
+	#featured-content .carousel-caption h1 { line-height: 100%; }
 }
 
 @media (max-width: 767px) {
@@ -242,14 +298,14 @@ input:focus,  button:focus { outline:none;}
 
 	.header-title { text-align: center; padding-top: 20px;padding-bottom:15px;}
 	.header-title h1 { color:#26a1cb; font:300 1.875em 'Oswald Medium', sans-serif; text-transform:uppercase;margin:0px 0px 10px;}
-	.header-title p { font: 1em 'Oswald',sans-serif; color:#505050;margin: 0px 0px 10px;}
+	.header-title p { font: 1em 'Sofia Pro Regular', 'Oswald',sans-serif; color:#505050;margin: 0px 0px 10px;}
 
 	.header-title.inverse h1, .header-title.inverse p { color: white;}
 
 	/* Tabbed Content */
 	.tabs-nav { list-style: none; margin: 0; padding: 0; text-align: center;}
 	.tabs-nav > li { display: inline;}
-	.tabs-nav > li > a { color:#ababab; text-decoration:none; display:inline-block; font: 1em 'Oswald',sans-serif;padding: 8px 16px;text-transform: capitalize;}
+	.tabs-nav > li > a { color:#ababab; text-decoration:none; display:inline-block; font: 1em 'Sofia Pro Regular', 'Oswald',sans-serif;padding: 8px 16px;text-transform: capitalize;}
 	.tabs-nav > li > a:hover, .tabs-nav > li.active > a {background:#26a1cb; color:white;}
 
 	.tabbed-content {min-height: 250px; }
@@ -261,8 +317,8 @@ input:focus,  button:focus { outline:none;}
 	.list-wrapper > img { max-width: 83px;margin-bottom:26px;}
 	.list-wrapper > span { margin-bottom: 1em; display: block; }
 	.list-wrapper > span > i { font-size: 400%; margin-bottom: 1em; }
-	.list-wrapper h4 { color:#26a1cb; font:300 1.08em 'Oswald', sans-serif;margin: 0px 0px 10px;text-transform: capitalize; white-space: pre;}
-	.list-wrapper p { color:#303030; font: 100 1em 'Oswald', sans-serif; margin: 0px 0px 10px; }
+	.list-wrapper h4 { color:#26a1cb; font:300 1.08em 'Sofia Pro Regular', 'Oswald', sans-serif;margin: 0px 0px 10px;text-transform: capitalize; white-space: pre;}
+	.list-wrapper p { color:#303030; font: 100 1em 'Sofia Pro Regular', 'Oswald', sans-serif; margin: 0px 0px 10px; }
 
 	#tab1 .list-inline > li {width:19%;}
 	.primary-section-inner .section-content .tabs-nav {margin-bottom: 74px;}
@@ -305,7 +361,7 @@ input:focus,  button:focus { outline:none;}
 	.section-content { display: table; width:100%;}
 	.grid-content { position: relative; z-index: 1;cursor:inherit;}
 	.text-caption { position: absolute; width: 100%; height: 100%; top: 0; left: 0; right: 0; bottom: 0; visibility: hidden; background-color: rgba(49,119,245,0.7);text-align:center; padding-top: 10%; padding-bottom: 10%;}
-	.text-caption h1 {color:white; font:300 1.87em 'Oswald Medium', sans-serif; text-transform: uppercase; margin: 0px 0px 6px; }
+	.text-caption h1 {color:white; font:300 1.87em 'Sofia Pro Medium', 'Oswald Medium', sans-serif; text-transform: uppercase; margin: 0px 0px 6px; }
 	.text-caption p { color:white;font: 1em 'Oswald', sans-serif;margin: 0px auto 26px; max-width: 70%; }
 	.btn-find-out-more { color: white; border: 1px solid white; text-decoration: none; font:500 1.08em 'Oswald Medium', sans-serif; padding: 10px 20px;}
 	.btn-find-out-more:hover {color:white;}
@@ -359,9 +415,9 @@ input:focus,  button:focus { outline:none;}
 	.box-content .box-wrapper > img { max-width: 285px;margin-bottom: 30px;}
 	.box-content .box-wrapper { background: white;}
 	.box-content .box-wrapper .box-content-text { background:white; text-align:center;padding: 0px 4px 38px;}
-	.box-content .box-wrapper .box-content-text h4 { color:#26a1cb; text-transform: uppercase; font: 1.12em 'Oswald Medium', sans-serif; margin: 0px 0px 20px;}
+	.box-content .box-wrapper .box-content-text h4 { color:#26a1cb; text-transform: uppercase; font: 1.12em 'Sofia Pro Medium', 'Oswald Medium', sans-serif; margin: 0px 0px 20px;}
 	.box-content .box-wrapper .box-content-text p {color:#303030; font:100 1em 'Oswald', sans-serif; margin: 0px 0px 30px;}
-	.btn-find-out-more-red {color: #26a1cb; border: 1px solid #26a1cb; text-decoration: none; font:500 1.08em 'Oswald Medium', sans-serif; padding: 8px 20px;display: inline-block;}
+	.btn-find-out-more-red {color: #26a1cb; border: 1px solid #26a1cb; text-decoration: none; font:500 1.08em 'Sofia Pro Medium', 'Oswald Medium', sans-serif; padding: 8px 20px;display: inline-block;}
 
 	.box-shadow-effect {position:relative;z-index: 0;}
 	.box-shadow-effect:before, .box-shadow-effect:after{z-index: -1;position: absolute;content: "";bottom: 15px;left: 10px;width: 50%;top: 80%;max-width:300px;background: rgba(0,0,0,.4);-webkit-box-shadow: 0 15px 10px rgba(0,0,0,.4);-moz-box-shadow: 0 15px 10px rgba(0,0,0,.4);box-shadow: 0 15px 10px rgba(0,0,0,.4);-webkit-transform: rotate(-3deg);-moz-transform: rotate(-3deg);-o-transform: rotate(-3deg);-ms-transform: rotate(-3deg);transform: rotate(-3deg);}
@@ -370,7 +426,7 @@ input:focus,  button:focus { outline:none;}
 	/* Subscrive to Newsletter */
 	#subscribe-to-newsletter { list-style: none; margin: 0px auto; padding: 0; text-align: center;}
 	#subscribe-to-newsletter > li { display: inline-block;  position: relative;}
-	#subscribe-to-newsletter > li input[type="text"] {padding: 16px 30px; min-width: 442px; color:#b9b9b9; font: 1em 'Oswald', sans-serif; position: relative; z-index: 1; border: 1px solid #acacac; -moz-box-shadow: inset 1px -2px 10px 0px rgba(0,0,0,.4); -webkit-box-shadow: inset 1px -2px 10px 0px rgba(0,0,0,.4); box-shadow: inset 1px -2px 10px 0px rgba(0,0,0,.4); }
+	#subscribe-to-newsletter > li input[type="text"] {padding: 16px 30px; min-width: 442px; color:#b9b9b9; font: 1em 'Sofia Pro Regular', 'Oswald', sans-serif; position: relative; z-index: 1; border: 1px solid #acacac; -moz-box-shadow: inset 1px -2px 10px 0px rgba(0,0,0,.4); -webkit-box-shadow: inset 1px -2px 10px 0px rgba(0,0,0,.4); box-shadow: inset 1px -2px 10px 0px rgba(0,0,0,.4); }
 	#subscribe-to-newsletter > li:first-child { margin-right: 6px;}
 	#subscribe-to-newsletter input[type="button"],
 	#subscribe-to-newsletter button[type="button"] { position: absolute; z-index: 2; right: 1px; top:1px; border:none; color:white; background:#fea700; min-width: 164px; font: 1em/120% 'Oswald', sans-serif; padding: 16px 20px;}
@@ -474,7 +530,7 @@ input:focus,  button:focus { outline:none;}
 	.footer-section .section-content ul.centered-list > li p a { color: white; text-decoration: none;padding: 0px 1em;}
 	.footer-section .section-content ul.centered-list > li p a img { max-width: 26px;display: inline-block;margin-right: 5px;}
 	.footer-section .section-content > div { display: table-cell; vertical-align: top; width: 48%;}
-	.footer-section .section-content > div h5 { color:#26a1cb; font: normal 1em 'Oswald', sans-serif;text-transform: uppercase;margin:0px;}
+	.footer-section .section-content > div h5 { color:#26a1cb; font: normal 1em 'Sofia Pro Regular', 'Oswald', sans-serif;text-transform: uppercase;margin:0px;}
 	.footer-section .section-content > div h5 img { max-width: 26px;margin-right: 5px; vertical-align: -moz-middle-with-baseline; vertical-align: -moz-baseline-middle;vertical-align: baseline-middle;}
 	.footer-section .section-content > div p { color:white; margin: 0px 0px 10px;}
 	.footer-section .section-content > div p span { display: block; white-space: pre;}
@@ -508,7 +564,7 @@ input:focus,  button:focus { outline:none;}
 	.location-map { clear:both; width: 100%; position:relative;}
 	.bottom-section { clear:both; width: 100%; background:#303030; padding-top: 28px; padding-bottom: 48px;}
 	.bottom-section-inner {max-width: 1170px; margin: 0px auto; padding-left: 15px; padding-right: 15px; }
-	.bottom-section-inner p.copyright {color:white; font: 0.87em 'Oswald Light', sans-serif;margin:0;display: inline-block; float: left; width: 82%;/*text-align:center; */}
+	.bottom-section-inner p.copyright {color:white; font: 0.87em 'Sofia Pro Light', 'Oswald Light', sans-serif;margin:0;display: inline-block; float: left; width: 82%;/*text-align:center; */}
 	.bottom-section-inner p.copyright span > img { max-width: 36px; vertical-align: baseline; }
 	.bottom-section-inner ul { list-style:none; float: right; margin:0; padding: 0;display:inline-block; width: 16%; text-align: right;}
 	.bottom-section-inner ul > li { display: inline-block;}
