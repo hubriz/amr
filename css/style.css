@@ -192,8 +192,8 @@ input:focus,  button:focus { outline:none;}
 	#site-logo span:hover { opacity: 0.95; }
 
 	/* Main Navigation */
-	#main-nav .submenu { display: none; -moz-box-shadow: 1px 0px 20px 0px rgba(0,0,0,.2), -1px 0px 20px 0px rgba(0,0,0,.2); -webkit-box-shadow: 1px 0px 20px 0px rgba(0,0,0,.2), -1px 0px 20px 0px rgba(0,0,0,.2);box-shadow: 1px 0px 20px 0px rgba(0,0,0,.2), -1px 0px 20px 0px rgba(0,0,0,.2);}
-	#main-nav > li { position: relative; padding-bottom: 20px;}
+	#main-nav .submenu { display: none; -moz-box-shadow: 1px 0px 20px 0px rgba(0,0,0,.2), -1px 0px 20px 0px rgba(0,0,0,.2); -webkit-box-shadow: 1px 0px 20px 0px rgba(0,0,0,.2), -1px 0px 20px 0px rgba(0,0,0,.2);box-shadow: 1px 0px 20px 0px rgba(0,0,0,.2), -1px 0px 20px 0px rgba(0,0,0,.2); z-index: 5;}
+	#main-nav > li { position: relative; padding-bottom: 20px; z-index: 4;}
 	#main-nav > li > a { display: inline-block; }
 	#main-nav > li:hover .submenu { display: inline-grid; position: absolute; top: 100%; left: 0; background-color: rgba(255,255,255,.6);border-radius: 4px; padding-top: 1.4em; padding-bottom: 1.4em;}
 	#main-nav > li:hover .submenu > li {min-width: 200px;}
