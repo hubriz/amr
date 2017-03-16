@@ -493,6 +493,10 @@ input:focus,  button:focus { outline:none;}
 	#why-us-section .img-container-right > img { min-width: 380px; max-width: 380px; position: absolute; left: -65px; top: -52px; z-index: 3;}
 }
 
+@media (min-width: 981px) and (max-width: 1099px) {
+	#why-us-section .img-container-right > img { bottom: -602px; top: auto; }
+}
+
 @media (min-width: 581px) and (max-width: 991px){
 	#why-us-section .img-container-right > img { bottom: -40px; left: 20%; right: 20%; top: auto; }
 }
